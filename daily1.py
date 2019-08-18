@@ -40,7 +40,7 @@ set1
 type(set1)
 
 set2 = {'INDIA','PAKISTAN',  "INDIA"}  #better way
-set2
+set2.count('INDIA')
 set3 = {'Australia', 'South Africa', 'INDIA'}
 set3
 sorted(set3)
@@ -65,7 +65,7 @@ list1
 #for loop : indentations with colon : Run next 2 lines together
 for i in list1:
     print(i)
-  
+list1[0:3]
 for i in list1:    print(i)
 for i in list1:    print('Dhiraj ', i + 6)
 
@@ -192,7 +192,7 @@ data.to_excel?
 #load from CSV and Excel
 data2a
 data2a = pd.read_csv('mtcars.csv') #when csv is in project folder
-data2b = pd.read_csv('E:/pywork/pyprojects/sippython/mtcars.csv')
+data2b = pd.read_csv('D:/pyworks/pyprojects/pyanalytics/mtcars.csv')
 #csv in any other location - full path
 data2b
 data2a.head()

@@ -16,7 +16,6 @@ df.describe()
 x = df.sort_values('wt')
 x
 x.iloc[[0,7,15,23,31],[5]]#%% Groupby
-
 df.groupby("am").agg({ "mpg" : ["min" ,"max"]}) #min mileage of each am 
 df.groupby('cyl')[['mpg','hp','wt']].mean()
 df.groupby('cyl').sum()
@@ -38,6 +37,7 @@ group1.agg([np.sum, np.mean, np.median])  #all numeric columns
 
 #rename columns as you aggregate
 group1['mpg'].agg([np.sum, np.mean, np.median])
+
 group1['mpg'].agg([np.sum, np.mean, np.median]).rename(columns={'sum':'Total', 'mean':"Average", 'median':'Middle_Value'})
 
 #different functions different columns

@@ -4,7 +4,7 @@
 #As a marketing manager, you want a set of customers who are most likely to purchase your product. This is how you can save your marketing budget by finding your audience. As a loan manager, you need to identify risky loan applications to achieve a lower loan default rate. This process of classifying customers into a group of potential and non-potential customers or safe or risky loan applications is known as a classification problem. Classification is a two-step process, learning step and prediction step. In the learning step, the model is developed based on given training data. In the prediction step, the model is used to predict the response for given data. Decision Tree is one of the easiest and popular classification algorithms to understand and interpret. It can be utilized for both classification and regression kind of problem.
 # Load libraries
 import pandas as pd
-from sklearn.tree import DecisionTreeClassifier, export_graphviz
+from sklearn.tree import DecisionTreeClassifier ,export_graphviz
 from sklearn import tree
 # Import Decision Tree Classifier
 from sklearn.model_selection import train_test_split
@@ -59,8 +59,7 @@ y_test
 import os
 os.environ["PATH"] += os.pathsep + 'c:/Program Files (x86)/Graphviz2.38/bin/'
 graph = Source(tree.export_graphviz(clf, out_file=None, class_names= ['0', '1']  , filled = True))
-import drawSvg as draw
-from IPython.display import SVG
+# Error ??
 display(SVG(graph.pipe(format='svg')))
 #%%%  Create Decision Tree classifer object
 clf = DecisionTreeClassifier(criterion="entropy", max_depth=3)

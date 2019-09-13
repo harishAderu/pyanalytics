@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 pd.set_option('max_rows',20)
-data = pd.read_csv('denco data.csv')
+data = pd.read_csv('du.csv')
 dd = data 
 dd
 data.index

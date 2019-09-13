@@ -12,4 +12,7 @@ dd.sortby('revenue')
 x = dd.groupby('custname')
 x.sort_values()
 dd.groupby('custname').agg(np.sum).sort_values('revenue')
-
+n1 = {5,6,7}
+type(n1)
+n1.intersection_update({7,10,3,5})
+n1

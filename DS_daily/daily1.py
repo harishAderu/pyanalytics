@@ -12,6 +12,19 @@ list2
 list2.count('f')
 len(list2)
 dir(list)
+a,b,c = 10,20,20
+d={'pooja':24, 'akhil':30}
+d['akhil']
+a =set()
+a
+
+dir(list2)
+ord('s')
+id?
+from django.urls import reverse
+reverse(list(list2))
+k =reversed(list2)
+print(k)
 sorted(list2)
 #%%
 #tuple - multiple type of objects, immutable: ( round brackets)
